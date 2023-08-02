@@ -7,7 +7,7 @@ COPY Pipfile /app/Pipfile
 COPY Pipfile.lock /app/Pipfile.lock
 COPY Model.py /app/Model.py
 COPY iris_model.joblib /app/iris_model.joblib
-
+COPY iris.csv /app/iris.csv
 
 # set the working directory in the container to be /app
 WORKDIR /app

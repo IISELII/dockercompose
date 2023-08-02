@@ -40,7 +40,7 @@ class IrisModel:
     # 5. Make a prediction based on the user-entered data
     #    Returns the predicted species with its respective probability
     def predict_species(self, sepal_length, sepal_width, petal_length, petal_width):
-        data_in = [[sepal_length, sepal_width, petal_length, petal_length]]
+        data_in = [[sepal_length, sepal_width, petal_length, petal_width]]
         prediction = self.model.predict(data_in)
         probability = self.model.predict_proba(data_in).max()
         return prediction[0], probability

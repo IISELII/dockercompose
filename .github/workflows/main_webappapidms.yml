@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: apishytristancontainer.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_4faca8e336f34bf6af984113ea37724c }}/api_d:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./API/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest

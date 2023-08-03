@@ -2,13 +2,13 @@ version: '3'
 services:
   network-example-service:
     image: apishytristancontainer.azurecr.io/streamlit_d
-    container_name: streamlit_d
+    container_name: kind_nash_compose
     restart: always
     ports:
       - "8501:8501"
   my-custom-app:
     image: apishytristancontainer.azurecr.io/api_d
-    container_name: api_d
+    container_name: shy_tristan_compose
     restart: always
     ports:
       - "8000:8000"

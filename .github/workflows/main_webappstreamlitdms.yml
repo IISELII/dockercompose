@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: apishytristancontainer.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_e91464ee3f6145ed962bcc531ce5aa44 }}/streamlit_d:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./streamlit/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest

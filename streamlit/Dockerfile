@@ -2,10 +2,9 @@
 FROM python:3.8.12-buster
 
 # copy files to the /app folder in the container
-COPY streamlit.py /app/streamlit/streamlit.py
-COPY Pipfile /app/Pipfile
-COPY Pipfile.lock /app/Pipfile.lock
-
+COPY streamlit/streamlit.py /app/streamlit.py
+COPY streamlit/Pipfile /app/Pipfile
+COPY streamlit/Pipfile.lock /app/Pipfile.lock
 # set the working directory in the container to be /app
 WORKDIR /app
 

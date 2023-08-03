@@ -1,0 +1,14 @@
+version: '3'
+services:
+  network-example-service:
+    image: streamlit_d:latest
+    container_name: kind_nash_compose
+    restart: always
+    ports:
+      - "8501:8501"
+  my-custom-app:
+    image: api_d:latest
+    container_name: shy_tristan_compose
+    restart: always
+    ports:
+      - "8000:8000"

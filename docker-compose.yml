@@ -2,7 +2,7 @@ version: '3'
 services:
   network-example-service:
     image: apishytristancontainer.azurecr.io/streamlit_d
-    container_name: kind_nash_compose
+    container_name: streamlit_d
     restart: always
     ports:
       - "8501:8501"

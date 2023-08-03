@@ -2,7 +2,7 @@
 FROM python:3.8.12-buster
 
 # copy files to the /app folder in the container
-COPY streamlit.py /app/streamlit.py
+COPY streamlit.py /app/streamlit/streamlit.py
 COPY Pipfile /app/Pipfile
 COPY Pipfile.lock /app/Pipfile.lock
 

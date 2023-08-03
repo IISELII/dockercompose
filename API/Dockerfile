@@ -17,5 +17,8 @@ WORKDIR /app
 RUN pip install pipenv
 RUN pipenv install --system --deploy --ignore-pipfile
 
+# expose port for the Streamlit web server
+EXPOSE 8000
+
 # execute the command python main.py (in the WORKDIR) to start the app
-CMD uvicorn fast:app --host 0.0.0.0 --port $PORT
+CMD uvicorn fast:app --host 0.0.0.0 --port 8000

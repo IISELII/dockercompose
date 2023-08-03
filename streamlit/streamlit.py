@@ -4,10 +4,10 @@ import requests
 import json
 
 # Define the FastAPI server endpoint
-FASTAPI_SERVER_ENDPOINT = 'https://selmodockerapp.azurewebsites.net/predict'
+FASTAPI_SERVER_ENDPOINT = 'https://webappapidms.azurewebsites.net/predict'
 
 # Create the Streamlit form
-st.title("Iris Species Predictor : SUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu")
+st.title("Iris Species Predictor : ")
 sepal_length = st.number_input('Insert sepal length')
 sepal_width = st.number_input('Insert sepal width')
 petal_length = st.number_input('Insert petal length')

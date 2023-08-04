@@ -9,7 +9,6 @@ streamlit = "*"
 "mysql.connector" = "*"
 mysql = "*"
 scikit-learn = "*"
-
 [dev-packages]
 
 [requires]

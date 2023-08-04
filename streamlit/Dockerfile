@@ -2,7 +2,7 @@
 FROM python:3.8.12-buster
 
 # copy files to the /app folder in the container
-COPY streamlit/streamlit.py /app/streamlit.py
+COPY streamlit/app_streamlit.py /app/app_streamlit.py
 COPY streamlit/Pipfile /app/Pipfile
 COPY streamlit/Pipfile.lock /app/Pipfile.lock
 # set the working directory in the container to be /app
@@ -16,4 +16,4 @@ RUN pipenv install --system --deploy --ignore-pipfile
 EXPOSE 8501
 
 # execute the command to start Streamlit app
-CMD streamlit run streamlit.py --server.port 8501
+CMD streamlit run app_streamlit.py --server.port 8501

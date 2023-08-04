@@ -11,7 +11,7 @@ WORKDIR /app
 # install the packages from the Pipfile in the container
 RUN pip install pipenv
 RUN pipenv install --system --deploy --ignore-pipfile
-RUN pip install mysql
+
 # expose port for the Streamlit web server
 EXPOSE 8501
 

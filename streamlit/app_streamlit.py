@@ -21,9 +21,9 @@ FASTAPI_SERVER_ENDPOINT = 'https://webappapidms.azurewebsites.net/predict'
 
 # Define MySQL DB Connection
 config = {
-    'host': os.getenv('BDD_HOST'),  
-    'user': os.getenv('BDD_USER'),
-    'password': os.getenv('BDD_PASSWORD'),
+    'host': 'bddselmo.mysql.database.azure.com',  
+    'user': 'selmo',
+    'password': 'simplon123!',
     'database': 'iris'
 }
 

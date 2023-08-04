@@ -2,12 +2,12 @@
 FROM python:3.8.12-buster
 
 # copy files to the /app folder in the container
-COPY fast.py /app/fast.py
-COPY Pipfile /app/Pipfile
-COPY Pipfile.lock /app/Pipfile.lock
-COPY Model.py /app/Model.py
-COPY iris_model.joblib /app/iris_model.joblib
-COPY iris.csv /app/iris.csv
+COPY API/fast.py /app/fast.py
+COPY API/Pipfile /app/Pipfile
+COPY API/Pipfile.lock /app/Pipfile.lock
+COPY API/Model.py /app/Model.py
+COPY API/iris_model.joblib /app/iris_model.joblib
+COPY API/iris.csv /app/iris.csv
 
 # set the working directory in the container to be /app
 WORKDIR /app

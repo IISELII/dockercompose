@@ -2,6 +2,7 @@
 import streamlit as st
 import requests
 import json
+
 import mysql.connector
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import time
@@ -11,9 +12,12 @@ from datetime import datetime
 
 
 st.set_page_config(page_title="IRIS_PREDICTIONS", page_icon=":pencil2:", layout="wide")
+=======
+
 
 # Define the FastAPI server endpoint
 FASTAPI_SERVER_ENDPOINT = 'https://webappapidms.azurewebsites.net/predict'
+
 
 # Define MySQL DB Connection
 config = {
@@ -26,6 +30,7 @@ config = {
 # Establish a new connection
 conn = mysql.connector.connect(**config)
 cursor = conn.cursor()
+
 
 # Create the Streamlit form
 st.title("Iris Species Predictor : ")
@@ -51,6 +56,7 @@ if st.button('Predict Species'):
     if response.status_code == 200:
         prediction = response.json()['prediction']
         probability = response.json()['probability']
+
         current_date = date.today().strftime("%d/%m/%Y")
         type(current_date)
 

@@ -8,7 +8,6 @@ pandas = "*"
 streamlit = "*"
 "mysql.connector" = "*"
 mysql = "*"
-
 [dev-packages]
 
 [requires]

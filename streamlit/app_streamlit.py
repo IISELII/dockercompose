@@ -21,9 +21,9 @@ FASTAPI_SERVER_ENDPOINT = 'https://webappapidms.azurewebsites.net/predict'
 
 # Define MySQL DB Connection
 config = {
-    'host': 'bddselmo.mysql.database.azure.com',
-    'user': 'selmo',
-    'password': 'simplon123!',
+    'host': secrets.BDD_HOST,
+    'user': secrets.BDD_USER,
+    'password': secrets.BDD_PASSWORD,
     'database': 'iris'
 }
 

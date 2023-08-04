@@ -12,7 +12,7 @@ from datetime import datetime
 
 
 st.set_page_config(page_title="IRIS_PREDICTIONS", page_icon=":pencil2:", layout="wide")
-=======
+
 
 
 # Define the FastAPI server endpoint

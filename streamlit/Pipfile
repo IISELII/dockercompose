@@ -8,6 +8,7 @@ pandas = "*"
 streamlit = "*"
 "mysql.connector" = "*"
 mysql = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
